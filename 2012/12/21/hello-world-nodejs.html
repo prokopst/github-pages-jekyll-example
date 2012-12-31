@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="jekyll-sample" />
+        <title>jekyll-sample: Hello world in Node.js</title>
+        <link rel="stylesheet" type="text/css" href="/github-pages-jekyll-example/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/github-pages-jekyll-example/css/pygments.css" />
+    </head>
+    <body>
+        <h1>Hello world in Node.js</h1>
+<p class='date'>December 21, 2012</p>
+<p><i>Node.js and its Hello world!</i></p>
+<p>This is pretty useless <em>&quot;Hello world&quot;</em> in Node.js:</p>
+<div class="highlight"><pre><code class="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>Hmm, who would actually use Node.js as a console application?
+It&#39;s a <em>&quot;Hello world&quot;</em>, so let&#39;s talk with the world!</p>
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">response</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;Content-Type&quot;</span><span class="o">:</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">});</span>
+  <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s2">&quot;Hello World\n&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">8000</span><span class="p">);</span>
+</code></pre></div>
+    </body>
+</html>

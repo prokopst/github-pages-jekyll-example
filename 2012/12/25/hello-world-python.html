@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="jekyll-sample" />
+        <title>jekyll-sample: Hello world in Python</title>
+        <link rel="stylesheet" type="text/css" href="/github-pages-jekyll-example/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/github-pages-jekyll-example/css/pygments.css" />
+    </head>
+    <body>
+        <h1>Hello world in Python</h1>
+<p class='date'>December 25, 2012</p>
+<p><i>Hello world in Python 2 and Python 3.</i></p>
+<p>In Python 2 you can use the code bellow, but it&#39;s not
+usable in Python 3:</p>
+<div class="highlight"><pre><code class="python"><span class="k">print</span> <span class="s">&quot;Hello world!&quot;</span>
+</code></pre></div>
+<p>In both Python 2 and Python 3 you can use:</p>
+<div class="highlight"><pre><code class="python3"><span class="nb">print</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Actually <code>print</code> is indeed interesing in Python world.
+In ancient times (before Python 3), the print was not a
+function, it was a statement! And in Python 3 it is only a
+function. But still, you can use brackets to print
+something. It&#39;s not any kind of forward compability, object in
+brackets is considered as a tuple, and that&#39;s all. So different
+result can be encountered when you use a multiple valus in brackets:</p>
+<div class="highlight"><pre><code class="python"><span class="k">print</span><span class="p">(</span><span class="s">&#39;Hello&#39;</span><span class="p">,</span> <span class="s">&#39;world!&#39;</span><span class="p">)</span>
+<span class="c"># result in Python 2:</span>
+<span class="c"># (&#39;Hello&#39;, &#39;world!&#39;)</span>
+<span class="c"># and in Python 3:</span>
+<span class="c"># Hello world!</span>
+</code></pre></div>
+<p>But let&#39;s forget this <code>print</code> sugar! Let&#39;s use something
+more interesting:</p>
+<div class="highlight"><pre><code class="python"><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">stdout</span>
+
+<span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;Hello world!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</code></pre></div>
+    </body>
+</html>
