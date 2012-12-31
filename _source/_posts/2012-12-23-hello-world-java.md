@@ -14,6 +14,7 @@ public class HelloWorld {
 ```
 
 And then Scala:
+
 ```scala
 object HelloWorld with Application {
     Console.println("Hello, World!");
