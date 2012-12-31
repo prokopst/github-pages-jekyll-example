@@ -6,10 +6,10 @@ About
 
 Example of blog powered by jekyll runnable on github pages. Unlike
 other examples this one takes a different approach, site is generated
-locally and the result is pushed into the respository.
-
-Other examples I have found so far are without pygments and syntax
-highlighting, pagination and github flavored markdown.
+locally and the result is pushed into the respository. This way you
+can use the latest versions of liquid, jekyll and redcarpet. You can
+even use plugins from _plugins directory. So you are not limited and
+you can do any wild stuff you can.
 
 Additional requirements to jekyll
 ---------------------------------
@@ -20,6 +20,8 @@ Github Pages are using older version.
     sudo gem install redcarpet
     
 Install pygments, great tool/library for syntax highlighting.
+Note that jekyll will implicitly inject pygments to redcarpet,
+if use pygments in configuration
     
     sudo easy_install pygments
     
