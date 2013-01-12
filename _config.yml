@@ -3,6 +3,6 @@ markdown: redcarpet
 # posts per page where you use pagination
 paginate: 2
 source: _source
-baseurl: /github-pages-jekyll-example/
+baseurl: /github-pages-jekyll-example
 exclude:
   - README.md
